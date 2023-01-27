@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: ProductSansRegular;
+    src: url(./fonts/ProductSansRegular.ttf);
+}
+
+@font-face {
+    font-family: ProductSansBold;
+    src: url(./fonts/ProductSansBold.ttf);
+}
+
+.productSansRegular{
+    font-family: ProductSansRegular;
+}
+
+.productSansBold{
+    font-family: ProductSansBold;
+}
+
+.sectionDarkBG{
+    background: #1E1E1F;
+}
