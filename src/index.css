@@ -12,6 +12,11 @@
     src: url(./fonts/ProductSansBold.ttf);
 }
 
+@font-face {
+    font-family: ProductSansLight;
+    src: url(./fonts/ProductSansLight.ttf);
+}
+
 .productSansRegular{
     font-family: ProductSansRegular;
 }
@@ -20,6 +25,18 @@
     font-family: ProductSansBold;
 }
 
+.productSansLight{
+    font-family: ProductSansLight;
+}
+
 .sectionDarkBG{
     background: #1E1E1F;
 }
+
+.socialIcons{
+    border-radius: 8px;
+    background: #1E1E1F;
+    box-shadow: -1px -1px 1px -1px rgba(227,227,227,0.75);
+    -webkit-box-shadow: -1px -1px 1px -1px rgba(227,227,227,0.75);
+    -moz-box-shadow: -1px -1px 1px -1px rgba(227,227,227,0.75);
+}   
