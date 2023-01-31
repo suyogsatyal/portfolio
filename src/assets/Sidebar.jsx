@@ -29,7 +29,7 @@ const Sidebar = () => {
                     <SidebarDetails/>
                 </div>
 
-                <div style={{ height: showElement ? 'auto' : '0' }} className="transition-all ease-in-out duration-300 overflow-hidden">
+                <div style={{ height: showElement ? 'auto' : '0' }} className="block xl:hidden transition-all ease-in-out duration-300 overflow-hidden">
                     <SidebarDetails />
                 </div>
 

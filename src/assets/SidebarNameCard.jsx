@@ -3,7 +3,7 @@ import myavatar from "./myavatar.png";
 
 const SidebarNameCard = () => {
     return (
-        <div className="nameCard text-left lg:text-center py-3 items-center flex flex-row xl:flex-col gap-3">
+        <div className="nameCard text-left lg:text-center py-3 items-center flex flex-row xl:flex-col gap-3 md:gap-0">
             <img src={myavatar} alt="userEmoji" className="w-20 h-20 m-1 sm:w-24 sm:h-24 sm:m-4 bg-stone-700 rounded-2xl sm:rounded-3xl" />
             <div className="flex flex-col">
                 <h2 className="productSansBold text-xl leading-10 sm:text-[28px] text-center">Suyog Satyal</h2>
