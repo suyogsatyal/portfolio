@@ -29,7 +29,7 @@ const Sidebar = () => {
                     <SidebarDetails/>
                 </div>
 
-                <div className={`${showElement? 'sm:h-[346px] md:h-[218px] lg:h-[226px]': 'h-0'}  xl:hidden transition-all ease-in-out duration-300 overflow-hidden`}><SidebarDetails />
+                <div className={`${showElement? 'h-[346px] md:h-[218px] lg:h-[226px]': 'h-0'}  xl:hidden transition-all ease-in-out duration-300 overflow-hidden`}><SidebarDetails />
                 </div>
 
                 <div className="relative block xl:hidden rounded-3xl cursor-pointer">
