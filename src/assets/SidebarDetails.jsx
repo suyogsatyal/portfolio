@@ -14,29 +14,29 @@ const SidebarDetails = () => {
             <hr className="my-2  border-gray-700 m-auto" />
             <div className="py-3 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-8">
-                    <div className="flex flex-row gap-3 w-min-full items-center productSansLight text-gray-300">
-                        <div className="bg-stone-800 rounded-lg socialIcons">
-                            <img src={email} alt="" className="w-3 h-3 m-2 md:w-5 md:h-5 md:m-3" />
+                    <div className="flex flex-row gap-3 w-min-full items-center productSansLight text-gray-300 truncate">
+                        <div className="block xl:hidden 2xl:block bg-stone-800 rounded-lg socialIcons lg:w-[44px] overflow">
+                            <img src={email} alt="" className="w-3 h-3 m-2 md:w-5 md:h-5 md:m-3 " />
                         </div>
                         <div className="text-gray-400 text-xs leading-none">
                             EMAIL
                             <br />
-                            <a href="mailto:suyogsatyal@gmail.com" className="text-gray-300 text-base">suyogsatyal@gmail.com</a>
+                            <a href="mailto:suyogsatyal@gmail.com" className="text-gray-300 text-base truncate">suyogsatyal@gmail.com</a>
                         </div>
 
                     </div>
                     <div className="flex flex-row gap-3 w-min-full items-center productSansLight text-gray-300">
-                        <div className="bg-stone-800 rounded-lg socialIcons">
+                        <div className="block xl:hidden 2xl:block bg-stone-800 rounded-lg socialIcons">
                             <img src={phone} alt="" className="w-3 h-3 m-2 md:w-5 md:h-5 md:m-3" />
                         </div>
                         <div className="text-gray-400 text-xs leading-none">
                             PHONE
                             <br />
-                            <a href="tel:+9779762423131" className="text-gray-300 text-base">+977 9762423131</a>
+                            <a href="tel:+9779762423131" className="text-gray-300 text-base">(+977)9762423131</a>
                         </div>
                     </div>
                     <div className="flex flex-row gap-3 w-min-full items-center productSansLight text-gray-300">
-                        <div className="bg-stone-800 rounded-lg socialIcons">
+                        <div className="block xl:hidden 2xl:block bg-stone-800 rounded-lg socialIcons">
                             <img src={calendar} alt="" className="w-3 h-3 m-2 md:w-5 md:h-5 md:m-3" />
                         </div>
                         <div className="text-gray-400 text-xs leading-none">
@@ -46,7 +46,7 @@ const SidebarDetails = () => {
                         </div>
                     </div>
                     <div className="flex flex-row gap-3 w-min-full items-center productSansLight text-gray-300">
-                        <div className="bg-stone-800 rounded-lg socialIcons">
+                        <div className="block xl:hidden 2xl:block bg-stone-800 rounded-lg socialIcons">
                             <img src={location} alt="" className="w-3 h-3 m-2 md:w-5 md:h-5 md:m-3" />
                         </div>
                         <div className="text-gray-400 text-xs leading-none">
