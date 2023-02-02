@@ -7,7 +7,7 @@ import Portfolio from "./Portfolio";
 
 const Hero = () => {
     return(
-        <div className="hero basis-4/5 my-2 mx-0 sm:m-3 sectionDarkBG truncate text-white border border-gray-700 rounded-3xl">
+        <div className="hero basis-4/5 my-2 mx-0 sm:m-3 truncate text-white bg-[#bbbbbb] dark:bg-[#1e1e1f] border border-gray-400 dark:border-gray-700 rounded-3xl">
             <Navbar />
             <About />
             <Resume />
