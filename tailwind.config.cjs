@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       width: {
         '500': '31.25em',
+      },
+      boxShadow: {
+        'socialIconsDark' : '-1px -1px 1px -1px rgba(227,227,227,0.8)',
+        'socialIcons' : '-1px -1px 1px -1px rgba(0, 0, 0, 0.8)',
       }
     },
     container: {
