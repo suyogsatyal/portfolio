@@ -9,8 +9,7 @@ const About = () => {
             I'm a computer science student from Kathmandu, Nepal, with a passion for creating impactful digital experiences.
             My proficiency in web design using HTML, CSS, and basic JS has enabled me to create websites and complete projects using tools 
             like Vite, NPM, TailwindCSS, Bootstrap, and SASS. 
-            <br />
-            <br />
+            <br /><br />
             I'm currently focusing on mastering ReactJS, an essential skill for backend 
             web development. Ultimately, my goal is to become a successful backend web developer who can bring innovative ideas to 
             life through the power of technology.While I don't have a concrete roadmap laid out ahead of
