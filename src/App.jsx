@@ -8,7 +8,6 @@ function App() {
 		<div className="App flex flex-col xl:flex-row mt-2 sm:mt-8 lg:mt-11 justify-around">
 			<Sidebar />
 			<Hero />
-			
 		</div>
 	)
 }
