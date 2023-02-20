@@ -4,6 +4,8 @@ import About from "./About";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
 import MobNavbar from "./MobNavbar";
+import Blog from "./Blog";
+import Contact from "./Contact";
 // import './test.css'
 
 const Hero = () => {
@@ -24,6 +26,12 @@ const Hero = () => {
                 </div>
                 <div className={activeTab === 3 ? "block" : "hidden"} >
                     <Portfolio />
+                </div>
+                <div className={activeTab === 4 ? "block" : "hidden"} >
+                    <Blog />
+                </div>
+                <div className={activeTab === 5 ? "block" : "hidden"} >
+                    <Contact />
                 </div>
             </div >
         </div >
