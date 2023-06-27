@@ -46,7 +46,10 @@
 
 .socialIconsDark{
     border-radius: 8px;
-    box-shadow: -1px -1px 1px -1px rgba(83, 83, 83, 0.75);
+    box-shadow: 
+    
+    
+    ;
     -webkit-box-shadow: -1px -1px 1px -1px rgba(83,83,83,0.75);
     -moz-box-shadow: -1px -1px 1px -1px rgba(83,83,83,0.75);
 }

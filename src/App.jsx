@@ -1,15 +1,17 @@
-import React from "react";
-import Sidebar from "./assets/Sidebar";
-import Hero from "./assets/Hero";
-import MobNavbar from "./assets/MobNavbar";
+import React, { useEffect, createContext, useState } from "react";
+import Home from "./pages/Home"
+export const ModeContext = createContext();
+
 
 function App() {
+	const [mode, setMode] = useState(localStorage.getItem('isChecked'))
+
 	return (
-		<div className="App flex flex-col xl:flex-row mt-2 sm:mt-8 lg:mt-11 justify-around">
-			<Sidebar />
-			<Hero />
-			
-		</div>
+		<ModeContext.Provider value={{setMode}}>
+			<section className={(mode == 'true') ? 'dark' : ' '}>
+				<Home />
+			</section>
+		</ModeContext.Provider>
 	)
 }
 

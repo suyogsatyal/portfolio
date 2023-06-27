@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from "react";
-// import DarkToggle from "./darkToggle";
+import React, { useState, useEffect, useContext } from "react";
+import { ModeContext } from '../App';
 import "./dark.css";
 
 const Navbar = ({ setActiveTab }) => {
-    const darkContains = document.querySelector('html').classList.contains('dark');
+    const darkContains = localStorage.getItem('isChecked');
     const [isChecked, setIsChecked] = useState(darkContains);
+    const { setMode } = useContext(ModeContext);
 
     const handleCheckboxChange = (event) => {
         setIsChecked(event.target.checked);
     };
 
     useEffect(() => {
-        document.querySelector('html').classList.toggle('dark', isChecked);
         localStorage.setItem('isChecked', isChecked);
+        setMode(localStorage.getItem('isChecked'));
     }, [isChecked]);
 
     useEffect(() => {

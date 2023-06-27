@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { ModeContext } from '../App';
 import downArrow from "/img/downArrow.svg";
 import downArrowDark from "/img/downArrowDark.svg";
-// import DarkToggle from "./darkToggle";
 import "./dark.css"
 import SidebarDetails from "./SidebarDetails";
 import SidebarNameCard from "./SidebarNameCard";
@@ -9,12 +9,13 @@ import SidebarNameCard from "./SidebarNameCard";
 const Sidebar = () => {
 
     const [showElement, setShowElement] = useState(false);
+    const { setMode } = useContext(ModeContext);
 
     const toggleContact = () => {
         setShowElement(!showElement);
     };
 
-    const darkContains = document.querySelector('html').classList.contains('dark');
+    const darkContains = localStorage.getItem('isChecked');
     const [isChecked, setIsChecked] = useState(darkContains);
 
     const handleCheckboxChange = (event) => {
@@ -22,8 +23,8 @@ const Sidebar = () => {
     };
 
     useEffect(() => {
-        document.querySelector('html').classList.toggle('dark', isChecked);
         localStorage.setItem('isChecked', isChecked);
+        setMode(localStorage.getItem('isChecked'))
     }, [isChecked]);
 
     useEffect(() => {
@@ -35,8 +36,8 @@ const Sidebar = () => {
 
 
     return (
-        <div className="sidebar bg-[#bbbbbb] dark:bg-[#1e1e1f] basis-1/5 border border-gray-400 dark:border-gray-700 my-2 mx-0 sm:m-3 rounded-3xl overflow-hidden">
-            <div className="text-gray-700 dark:text-gray-50 lg:sticky p-2 sm:p-5 ">
+        <div className="sidebar bg-[#bbbbbb] dark:bg-[#1e1e1f] basis-1/5 border lg:sticky top-8 border-gray-400 dark:border-gray-700 my-2 mx-0 sm:m-3 rounded-3xl overflow-hidden h-max">
+            <div className="text-gray-700 dark:text-gray-50 p-2 sm:p-5 ">
                 <div className="relative block xl:hidden rounded-3xl cursor-pointer">
                     <div className="absolute hidden sm:block -right-6 -top-6 p-2 border border-1 border-gray-400 dark:border-gray-700 rounded-bl-3xl dark:text-blue-300 text-blue-900" onClick={toggleContact}>
                         Show Contacts
